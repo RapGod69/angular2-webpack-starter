@@ -20,6 +20,9 @@ import { GayComponent } from './gay';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
 
+import {StudentService} from "./services/student.service";
+import {StudentsComponent} from "./students/";
+
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -42,6 +45,7 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     GayComponent,
+    StudentsComponent,
     NoContentComponent,
     XLarge
   ],
@@ -53,7 +57,8 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    StudentService
   ]
 })
 export class AppModule {
