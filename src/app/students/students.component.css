@@ -1,0 +1,5 @@
+.i-table, .i-table th, .i-table td {
+    border: 1px solid black;
+}
+
+.i-table td { padding: 6px 12px; }

@@ -1,3 +1,6 @@
 <div *ngFor = "let dude of dudes; let i = index">
-    {{dude.getName()}} is gay number {{i}} with gayness level {{dude.getGaynessLevel()}}
+    <div class="i-gay-dude {{dude.getName()}}">
+        <h1>{{dude.getName()}}</h1>
+        <div class="i-dude-gayness">(gayness level: {{dude.getGaynessLevel()}})</div>
+    </div>
 </div>

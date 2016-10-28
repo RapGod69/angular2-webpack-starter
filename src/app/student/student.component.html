@@ -1,0 +1,23 @@
+<div *ngIf="checkStudent() == true">
+    <label>Name</label>
+    <input type="text" [readOnly]="isReadOnly" value="{{student.getName()}}">
+
+    <br>
+    <br>
+
+    <label>Surname</label>
+    <input type="text" [readOnly]="isReadOnly" value="{{student.getSurName()}}">
+
+    <br>
+    <br>
+
+    <label>Group</label>
+    <input type="text" [readOnly]="isReadOnly" value="{{student.getGroup()}}">
+
+    <br>
+    <br>
+
+    <button  *ngIf="isReadOnly" (click) = "toggleEditStudent()">Edit</button>
+    <button  *ngIf="!isReadOnly" (click) = "saveStudent()">Save</button>
+    <button  *ngIf="!isReadOnly" (click) = "toggleEditStudent()">Cancel</button>
+</div>

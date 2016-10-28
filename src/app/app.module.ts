@@ -22,6 +22,7 @@ import { XLarge } from './home/x-large';
 
 import {StudentService} from "./services/student.service";
 import {StudentsComponent} from "./students/";
+import {StudentComponent} from "./student/";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -46,6 +47,7 @@ type StoreType = {
     HomeComponent,
     GayComponent,
     StudentsComponent,
+    StudentComponent,
     NoContentComponent,
     XLarge
   ],
